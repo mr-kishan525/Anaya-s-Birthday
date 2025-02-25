@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Miss</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: radial-gradient(circle, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 20px;
+            overflow: hidden;
+            animation: backgroundAnimate 10s infinite alternate;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+        }
+        h1 {
+            color: #ff477e;
+            animation: bounce 1.5s infinite;
+        }
+        p {
+            font-size: 20px;
+            color: #222;
+            line-height: 1.5;
+        }
+        .heart {
+            color: red;
+            font-size: 40px;
+            animation: heartbeat 1s infinite;
+        }
+        .floating-hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        .heart-shape {
+            position: absolute;
+            bottom: -100px;
+            width: 50px;
+            height: 50px;
+            background: red;
+            clip-path: polygon(50% 15%, 100% 40%, 75% 100%, 50% 80%, 25% 100%, 0% 40%);
+            animation: floatUp 6s infinite ease-in-out;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+        audio {
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+        @keyframes floatUp {
+            from { transform: translateY(100vh); opacity: 0; }
+            to { transform: translateY(-10vh); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-hearts">
+        <div class="heart-shape" style="left:10%; animation-duration: 6s;"></div>
+        <div class="heart-shape" style="left:30%; animation-duration: 5s;"></div>
+        <div class="heart-shape" style="left:50%; animation-duration: 7s;"></div>
+        <div class="heart-shape" style="left:70%; animation-duration: 6.5s;"></div>
+        <div class="heart-shape" style="left:90%; animation-duration: 5.5s;"></div>
+    </div>
+    <div class="container">
+        <h1>Happy Birthday, Miss 🎈🎉</h1>
+        <p>Dear Anaya,</p>
+        <p>On this special day, I just want to say how much you mean to me. You are the most wonderful person I have ever known, and every moment with you is magical.</p>
+        <p>Today, I not only wish you all the happiness in the world but also want to confess something from the bottom of my heart...</p>
+        <p><strong>I love you, Miss! ❤️</strong></p>
+        <p>You are my happiness, my reason to smile, and my world. I hope this birthday brings you as much joy as you bring into my life.</p>
+        <p class="heart">💖💖💖</p>
+        <p>With all my love,</p>
+        <p><em>Your biggest admirer</em></p>
+        <img src="Screenshot 2025-01-16 194539.png" alt="Anaya with Sunflower">
+        <audio controls autoplay loop>
+            <source src="die-with-a-smile.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="footer">Made with love 💕</div>
+</body>
+</html>
